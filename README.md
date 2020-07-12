@@ -9,44 +9,51 @@ Python code for conducting analysis techniques is in air_water_cancer.ipynb
 
 ## Dataset
 ### Air Data
-* Days with AQI
-Number of days in the year having an Air Quality Index value. This is the number of days on which measurements from any monitoring site in the county or MSA were reported to the AQS database.
-# Days Good
+Days with AQI
+Number of days in the year having an Air Quality Index value. This is the number of days on which measurements from any monitoring site in the county or MSA were reported to the AQS database.  
+  
+Days Good
 Number of days in the year having an AQI value 0 through 50.
-# Days Moderate
+  
+Days Moderate
 Number of days in the year having and AQI value 51 through 100.
-# Days Unhealthy for Sensitive Groups
+  
+Days Unhealthy for Sensitive Groups
 Number of days in the year having an AQI value 101 through 150.
-# Days Unhealthy
+   
+Days Unhealthy
 Number of days in the year having an AQI value 151 through 200.
-# Days Very Unhealthy
+
+Days Very Unhealthy
 Number of days in the year having an AQI value 201 or higher. This includes the AQI categories very unhealthy and hazardous. Very few locations (about 0.3% of counties) have any days in the very unhealthy or hazardous categories.
+
 AQI Max
 The highest daily AQI value in the year.
+
 AQI 90th %ile
 90 percent of daily AQI values during the year were less than or equal to the 90th percentile value.
+
 AQI Median
 Half of daily AQI values during the year were less than or equal to the median value, and half equaled or exceeded it.
-# Days CO
-# Days NO2
-# Days O3
-# Days SO2
-# Days PM2.5
-# Days PM10
-A daily index value is calculated for each air pollutant measured. The highest of those index values is the AQI value, and the pollutant responsible for the highest index value is the "Main Pollutant." These columns give the number of days each pollutant measured was the main pollutant. A blank column indicates a pollutant not measured in the county or CBSA.
 
-##New columns created in the clean set:#####
+Days CO
+Days NO2
+Days O3
+Days SO2
+Days PM2.5
+Days PM10  
+
+A daily index value is calculated for each air pollutant measured. The highest of those index values is the AQI value, and the pollutant responsible for the highest index value is the "Main Pollutant." These columns give the number of days each pollutant measured was the main pollutant. A blank column indicates a pollutant not measured in the county or CBSA.
+  
+New columns created in the clean set
 Since each county did not collect data for 365 days each year, each Good, hazardous, Unhealthy etc Day column must be normalized by the number of days that were recorded. 
 
 For example:
-
 Good days_Norm = GoodDays/ Days with AQI
-
 Therefore, this column shows the percentage of “good days” each year based on the number of days AQI was taken for that county, that year.
-
 This also applied for the Days CO, NO2, etc.
 
-################Water Data##################
+### Water Data
 'Year': 2011~2015
 'FIPS': includes State and County code in one variable
 'Value': the concentration of arsenic (?g/L)
@@ -58,8 +65,7 @@ This also applied for the Days CO, NO2, etc.
         			level in 10~60 (?g/L) means "harmful"
 Maximum Contaminant Levels = MCL
 
-#########Cancer Data##############
-
+### Cancer Data
 ‘Categories’ : ‘Groups’ (groups are subcategories of categories)
 
 'All': 'Total'
