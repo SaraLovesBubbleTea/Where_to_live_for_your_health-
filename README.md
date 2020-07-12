@@ -9,31 +9,31 @@ Python code for conducting analysis techniques is in air_water_cancer.ipynb
 
 ## Dataset
 ### Air Data
-Days with AQI
+Days with AQI  
 Number of days in the year having an Air Quality Index value. This is the number of days on which measurements from any monitoring site in the county or MSA were reported to the AQS database.  
   
-Days Good
+Days Good  
 Number of days in the year having an AQI value 0 through 50.
   
-Days Moderate
+Days Moderate  
 Number of days in the year having and AQI value 51 through 100.
   
-Days Unhealthy for Sensitive Groups
+Days Unhealthy for Sensitive Groups  
 Number of days in the year having an AQI value 101 through 150.
    
-Days Unhealthy
+Days Unhealthy  
 Number of days in the year having an AQI value 151 through 200.
 
-Days Very Unhealthy
+Days Very Unhealthy  
 Number of days in the year having an AQI value 201 or higher. This includes the AQI categories very unhealthy and hazardous. Very few locations (about 0.3% of counties) have any days in the very unhealthy or hazardous categories.
 
-AQI Max
+AQI Max  
 The highest daily AQI value in the year.
 
-AQI 90th %ile
+AQI 90th %ile  
 90 percent of daily AQI values during the year were less than or equal to the 90th percentile value.
 
-AQI Median
+AQI Median  
 Half of daily AQI values during the year were less than or equal to the median value, and half equaled or exceeded it.
 
 Days CO
@@ -61,7 +61,7 @@ This also applied for the Days CO, NO2, etc.
 'State': State Abbreviation
 'Quality': a categorical data by binning the mean into three categories
   		binning rule: level < 1 (?g/L) means non-detected arsenic
-    		level in 1~10 (?g/L) means less than MCL = "no harm"
+    		level in 1-10 (?g/L) means less than MCL = "no harm"
         			level in 10~60 (?g/L) means "harmful"
 Maximum Contaminant Levels = MCL
 
