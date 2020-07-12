@@ -54,7 +54,7 @@ Therefore, this column shows the percentage of “good days” each year based o
 This also applied for the Days CO, NO2, etc.
 
 ### Water Data
-'Year': 2011~2015
+'Year': 2011-2015
 'FIPS': includes State and County code in one variable
 'Value': the concentration of arsenic (?g/L)
 'County': County Name
